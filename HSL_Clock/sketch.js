@@ -11,6 +11,7 @@ let sSwitch = -1;
 function setup() {
   createCanvas(windowWidth, windowHeight);
   colorMode(HSL, 360, 100, 100);
+  textFont("Courier New");
 
   h = random(0, 360);  
   s = random(0, 100);  
@@ -42,21 +43,28 @@ function draw() {
 
   background(h, s, l);
 
-  let hText = `(  ${floor(h)},`;
+  let hText = `( ${floor(h)},`;
   let sText = `${floor(s)}%,`;
-  let lText = `${floor(l)}%  )`;
+  let lText = `${floor(l)}% )`;
   
-  push();
-  noStroke(); 
-  fill(150);
-  rect(width/48, height*13.65 /30, width* 46/48, 18)
-  pop();
+  //small text with background
+  // push();
+  // noStroke(); 
+  // fill(150);
+  // rect(width/48, height*13.65 /30, width* 46/48, 18)
+  // pop();
 
 
-  textSize(14);
+  // textSize(14);
+  // text(hText, width*0.5/20, height*14 /30 );
+  // text(sText, width / 2, height*14 /30);
+  // text(lText, width*45.3/48, height*14 /30);
+
+  //larger
+  textSize(48);
   text(hText, width*0.5/20, height*14 /30 );
   text(sText, width / 2, height*14 /30);
-  text(lText, width*45.3/48, height*14 /30);
+  text(lText, width*18/20, height*14 /30);
 
 
   lastMilis = curMilis;
