@@ -46,11 +46,17 @@ function draw() {
   let sText = `${floor(s)}%,`;
   let lText = `${floor(l)}%  )`;
   
+  push();
+  noStroke(); 
+  fill(150);
+  rect(width/48, height*13.65 /30, width* 46/48, 18)
+  pop();
 
-  textSize(32);
+
+  textSize(14);
   text(hText, width*0.5/20, height*14 /30 );
   text(sText, width / 2, height*14 /30);
-  text(lText, width*18/20, height*14 /30);
+  text(lText, width*45.3/48, height*14 /30);
 
 
   lastMilis = curMilis;
