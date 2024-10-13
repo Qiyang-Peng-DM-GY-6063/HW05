@@ -1,64 +1,22 @@
-# p5.js multi sketch template
+# HW05A/B
+## HW05A - Keeping Track of Time
 
-By putting different sketch.js and index.html files in directories we can more easily switch between multiple experiments.
+An interesting clock based on HSL. 
 
----
+The smallest unit "l" will change each 0.1 s. For smoother transition, both "s" and "l" change from 0 to 100 back and forth. Whether incrementing or decrementing, when the smaller unit completes 100 units of change, the next larger unit will accordingly advance by one.
 
-This is a README file that can be used to describe and document your assignment.
+Overall, this is a color clock with a cycle of 100 hours.
 
-Markdown Cheatsheet (from [https://www.markdownguide.org/cheat-sheet/](https://www.markdownguide.org/cheat-sheet/)):
+Inspired by: 
+https://www.jacopocolo.com/hexclock/
+http://www.thecolourclock.com/
 
----
----
+## HW05A - Grapefruit
 
-# Heading1
-## Heading2
-### Heading3
-#### Heading4
-##### Heading5
-###### Heading6
+An annoying web that makes noise and keeps asking you to keep quiet. (every 30s/ or trigger by mouse click)
 
-**bold text**
+Used Web Speech API.
 
-*italicized text*
+Inspired by: 
+![GrapeFruit](./grapefruit-quiet.png)
 
-~~strikethrough text~~
-
-Ordered List:
-1. First item
-2. Second item
-3. Third item
-
-Unordered List:
-- First item
-- Second item
-- Third item
-
-`short code block`
-
-```
-extended code block
-fun() {
-  return 0
-}
-```
-
-Link:  
-[linked text](https://www.example.com)
-
-
-Image with url:  
-![image description](https://dm-gy-6063-2024f-b.github.io/assets/homework/02/clark-espaco-modulado-00.jpg)
-
-
-Image on repo:  
-![image description](./file-name.jpg)
-
-
-To start a new line, add two spaces at the end of a line, like this:  
-this is a new line.
-
-
-To start a new paragraph, leave an empty line between two lines of text.
-
-This is a new paragraph.
